@@ -44,34 +44,29 @@ const New: React.FC<NewProps> = () => {
 
     const updateFighter2 = (e: React.ChangeEvent<HTMLSelectElement>) => {
         let val = e.target.options[e.target.selectedIndex].value;
-        if (val == 'yes') {
-            console.log("is champ")
-            setFighter({ ...fighter!, champion: true })
-        } else {
-            console.log("not champ")
-            setFighter({ ...fighter!, champion: false })
-        }
+        (val == 'yes') ? setFighter({ ...fighter!, champion: true }) : setFighter({ ...fighter!, champion: false })
+
     }
     return (<>
         <form className='fighter-form' onSubmit={(e) => addThisFighter(e)}>
-            <input placeholder='fighter name' onChange={e => updateFighter(e)} name="name" />
+            <input className="fighter-input" placeholder='fighter name' onChange={e => updateFighter(e)} name="name" />
             <br />
-            <input placeholder='weight class' onChange={e => updateFighter(e)} name="weightclass" />
+            <input className="fighter-input" placeholder='weight class' onChange={e => updateFighter(e)} name="weightclass" />
             <br />
-            <input placeholder='record' onChange={e => updateFighter(e)} name="record" />
+            <input className="fighter-input" placeholder='record' onChange={e => updateFighter(e)} name="record" />
             <br />
-            <input placeholder='fighter image url' onChange={e => updateFighter(e)} name="pic" />
+            <input className="fighter-input" placeholder='fighter image url' onChange={e => updateFighter(e)} name="pic" />
             <br />
-            <input placeholder='ranking' onChange={e => updateFighter(e)} name="ranking" />
+            <input className="fighter-input" placeholder='ranking' onChange={e => updateFighter(e)} name="ranking" />
             <br />
-            <label>Is this fighter the campion?</label>
+            <label className='champ-question'>Is this fighter the campion?</label>
             <br />
-            <select onChange={e => updateFighter2(e)}>
+            <select className="fighter-input" onChange={e => updateFighter2(e)}>
                 <option value='yes'>yes</option>
                 <option value='no'>no</option>
             </select>
             <br />
-            <button>Add Fighter</button>
+            <button className='add-fighter-btn'>Add Fighter</button>
         </form>
     </>);
 }
