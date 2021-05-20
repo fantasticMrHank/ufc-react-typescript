@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.link-item {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #000;
+  margin: 15px;
+  transition: color 0.5s;
+}
+
+.link-item:hover {
+  color: #74c69d;
+}
+.active-link {
+  color: #74c69d;
+}
+.group-container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.fighter-card {
+  position: relative;
+  width: 250px;
+  height: 400px;
+  background-color: white;
+  border-radius: 6px;
+  margin: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.fighter-card-champ {
+  position: relative;
+  width: 250px;
+  height: 400px;
+  background-color: #ccaa35;
+  border-radius: 6px;
+  margin: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  display: block;
+  margin: 15px auto;
+}
+.fighter-name {
+  position: absolute;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  left: 50%;
+  font-size: 20px;
+  transform: translateX(-50%) translateY(-20px);
+}
+
+.fighter-record {
+  position: absolute;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 800;
+  left: 50%;
+  font-size: 20px;
+  color: red;
+  transform: translateX(-50%) translateY(20px);
+}
+.champ-text {
+  position: absolute;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 800;
+  left: 50%;
+  font-size: 28px;
+  transform: translateX(-50%) translateY(80px);
+}
+
+.fighter-form {
+  width: 400px;
+  margin: 100px auto;
+}
+
+.delete-fighter-btn {
+  position: absolute;
+
+  left: 50%;
+  font-size: 20px;
+  transform: translateX(-50%) translateY(170px);
+}

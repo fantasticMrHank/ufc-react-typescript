@@ -1,0 +1,72 @@
+{
+  "fighters": [
+    {
+      "id": 1,
+      "name": "Francis Ngannou",
+      "weightclass": "Heavyweight",
+      "record": "16–3",
+      "champion": true,
+      "ranking": 1,
+      "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Francis_Ngannou_photo.jpg/220px-Francis_Ngannou_photo.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Jan Błachowicz",
+      "weightclass": "Light Heavyweight",
+      "record": "28-8",
+      "champion": true,
+      "ranking": 1,
+      "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Jan_Blachowicz_at_UFC_Fight_Night_136.jpg/412px-Jan_Blachowicz_at_UFC_Fight_Night_136.jpg"
+    },
+    {
+      "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Stipe_Miocic_%2848086643396%29_%28cropped%29.jpg/324px-Stipe_Miocic_%2848086643396%29_%28cropped%29.jpg",
+      "name": "Stipe Miocic",
+      "weightclass": "Heavyweight",
+      "record": "20-4",
+      "ranking": 2,
+      "champion": false,
+      "id": 6
+    },
+    {
+      "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Derrick_Lewis_after_UFC_239.jpg/480px-Derrick_Lewis_after_UFC_239.jpg",
+      "name": "Derrick Lewis",
+      "weightclass": "Heavyweight",
+      "record": "25-7",
+      "ranking": 3,
+      "champion": false,
+      "id": 8
+    },
+    {
+      "name": "Israel Adesanya",
+      "weightclass": "Middleweight",
+      "record": "20-1",
+      "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Israel_Adesanya_at_UFC_230.jpg/376px-Israel_Adesanya_at_UFC_230.jpg",
+      "ranking": 1,
+      "champion": true,
+      "id": 9
+    },
+    {
+      "name": "Robert Whittaker",
+      "weightclass": "Middleweight",
+      "record": "23-5",
+      "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Robert_whittaker.jpg/384px-Robert_whittaker.jpg",
+      "ranking": 2,
+      "champion": false,
+      "id": 10
+    }
+  ],
+  "weightclasses": [
+    {
+      "id": 1,
+      "name": "Heavyweight"
+    },
+    {
+      "id": 2,
+      "name": "Light Heavyweight"
+    },
+    {
+      "name": "Middleweight",
+      "id": 3
+    }
+  ]
+}
