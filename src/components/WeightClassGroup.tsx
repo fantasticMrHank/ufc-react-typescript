@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router";
 import { currentGroup, setCurrentWeightClassId, getFightersByWeightClass, currentWeightClass, deleteWeightClass, currentWeightClasses } from "../store/fighterSlice";
 import FighterPreview from "./FighterPreview";
+import { motion } from 'framer-motion';
 
 export interface WeightClassGroupProps {
 
@@ -32,7 +33,20 @@ const WeightClassGroup: React.FC<WeightClassGroupProps> = () => {
         })
     }
 
-    return (<div className='group-container'>{myGroup.map(f => <FighterPreview fighter={f} key={f.id} checkIfWeightClassEmpty={checkIfWeightClassEmpty} />)}</div>);
+    return (
+        <motion.div className='group-container'
+            initial={{
+                y: -500,
+                opacity: 0
+            }}
+            animate={{
+                opacity: 1,
+                y: 0
+            }}>
+
+            {myGroup.map((f, idx) => <FighterPreview fighter={f} key={f.id} checkIfWeightClassEmpty={checkIfWeightClassEmpty} idx={idx} />)}
+        </motion.div>
+    );
 }
 
 export default WeightClassGroup;

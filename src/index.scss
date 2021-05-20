@@ -1,9 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+@media only screen and (max-width: 650px) {
+  .header-container .link-item {
+    font-size: 0.8rem;
+  }
+}
+
+body {
+  margin: 0px;
+  background: center;
+  background: #ededed;
+}
+.header-container {
+  background: #fff;
+  margin: 0px;
+  padding: 5px 10px;
+  display: flex;
+  margin-top: 20px;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.3);
+}
 .link-item {
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 800;
   color: #000;
   margin: 15px;
@@ -20,12 +39,15 @@
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 100px auto;
+  justify-content: center;
 }
 .fighter-card {
   position: relative;
   width: 250px;
   height: 400px;
-  background-color: #ededed;
+  background-color: #fff;
   border-radius: 6px;
   margin: 10px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
@@ -47,6 +69,7 @@
   border-radius: 50%;
   display: block;
   margin: 15px auto;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .fighter-name {
   position: absolute;
@@ -78,17 +101,35 @@
   transform: translateX(-50%) translateY(80px);
 }
 
-.fighter-form {
+.form-container {
   width: 400px;
-  margin: 100px auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.fighter-form {
 }
 
 .delete-fighter-btn {
   position: absolute;
-
   left: 50%;
-  font-size: 20px;
-  transform: translateX(-50%) translateY(170px);
+  font-size: 12px;
+  transform: translateX(-50%) translateY(200px);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #fff;
+  background: #e1cd5d;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background 1s;
+}
+.delete-fighter-btn:hover {
+  background: #999900;
 }
 .fighter-input {
   width: 300px;

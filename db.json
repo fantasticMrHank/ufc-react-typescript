@@ -53,6 +53,42 @@
       "ranking": 2,
       "champion": false,
       "id": 10
+    },
+    {
+      "name": "Glover Teixeira",
+      "weightclass": "Light Heavyweight",
+      "record": "32-7",
+      "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Glover_Teixeira.jpg/427px-Glover_Teixeira.jpg",
+      "ranking": 2,
+      "champion": false,
+      "id": 11
+    },
+    {
+      "pic": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Ji%C5%99%C3%AD_%22Denisa%22_Proch%C3%A1zka_2020_07_Strahov_Praha.jpg/373px-Ji%C5%99%C3%AD_%22Denisa%22_Proch%C3%A1zka_2020_07_Strahov_Praha.jpg",
+      "name": "Jiří Procházka",
+      "weightclass": "Light Heavyweight",
+      "record": "28-3-1",
+      "ranking": 3,
+      "champion": false,
+      "id": 12
+    },
+    {
+      "name": "Paulo Costa",
+      "weightclass": "Middleweight",
+      "record": "13-1",
+      "pic": "https://pbs.twimg.com/media/Ei6lY3DX0Askmb3.jpg",
+      "ranking": 3,
+      "champion": false,
+      "id": 13
+    },
+    {
+      "name": "Ciryl Gane",
+      "weightclass": "Heavyweight",
+      "pic": "https://a.espncdn.com/combiner/i?img=/i/headshots/mma/players/full/4426000.png",
+      "record": "8-0",
+      "ranking": 4,
+      "champion": false,
+      "id": 14
     }
   ],
   "weightclasses": [

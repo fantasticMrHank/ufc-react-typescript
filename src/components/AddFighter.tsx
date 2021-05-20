@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { addFighter, addWeightClass, needNewWeightClass, newWeightClass } from '../store/fighterSlice';
+import { motion } from 'framer-motion';
 
 export interface NewProps {
 
@@ -47,28 +48,45 @@ const New: React.FC<NewProps> = () => {
         (val == 'yes') ? setFighter({ ...fighter!, champion: true }) : setFighter({ ...fighter!, champion: false })
 
     }
-    return (<>
-        <form className='fighter-form' onSubmit={(e) => addThisFighter(e)}>
-            <input className="fighter-input" placeholder='fighter name' onChange={e => updateFighter(e)} name="name" />
-            <br />
-            <input className="fighter-input" placeholder='weight class' onChange={e => updateFighter(e)} name="weightclass" />
-            <br />
-            <input className="fighter-input" placeholder='record' onChange={e => updateFighter(e)} name="record" />
-            <br />
-            <input className="fighter-input" placeholder='fighter image url' onChange={e => updateFighter(e)} name="pic" />
-            <br />
-            <input className="fighter-input" placeholder='ranking' onChange={e => updateFighter(e)} name="ranking" />
-            <br />
-            <label className='champ-question'>Is this fighter the campion?</label>
-            <br />
-            <select className="fighter-input" onChange={e => updateFighter2(e)}>
-                <option value='yes'>yes</option>
-                <option value='no'>no</option>
-            </select>
-            <br />
-            <button className='add-fighter-btn'>Add Fighter</button>
-        </form>
-    </>);
+    return (
+
+        <motion.div className='form-container'
+
+            transition={{
+                //delay: 1.5
+                //duration: .2
+            }}
+            initial={{
+                y: -500,
+                opacity: 0
+            }}
+            animate={{
+                opacity: 1,
+                y: 0
+            }}>
+
+            <form className='fighter-form' onSubmit={(e) => addThisFighter(e)}>
+                <input className="fighter-input" placeholder='fighter name' onChange={e => updateFighter(e)} name="name" />
+                <br />
+                <input className="fighter-input" placeholder='weight class' onChange={e => updateFighter(e)} name="weightclass" />
+                <br />
+                <input className="fighter-input" placeholder='record' onChange={e => updateFighter(e)} name="record" />
+                <br />
+                <input className="fighter-input" placeholder='fighter image url' onChange={e => updateFighter(e)} name="pic" />
+                <br />
+                <input className="fighter-input" placeholder='ranking' onChange={e => updateFighter(e)} name="ranking" />
+                <br />
+                <label className='champ-question'>Is this fighter the campion?</label>
+                <br />
+                <select className="fighter-input" onChange={e => updateFighter2(e)}>
+                    <option value='yes'>yes</option>
+                    <option value='no'>no</option>
+                </select>
+                <br />
+                <button className='add-fighter-btn'>Add Fighter</button>
+            </form>
+        </motion.div>
+    );
 }
 
 export default New;
